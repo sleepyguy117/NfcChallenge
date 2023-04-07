@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/fontfabric_mont_bold"
+        android:lines="1"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Amanda Gonzalez" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fundsAvailableHolder"
+        android:layout_width="214dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/funds_available_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fundAvailableValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:fontFamily="@font/fontfabric_mont_bold"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@id/fundAvailableLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="$8.10" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fundAvailableLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontfabric_mont_regular"
+            android:text="@string/funds_available"
+            android:textAllCaps="true"
+            android:textColor="@color/white_60"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/fundAvailableValue"
+            app:layout_constraintTop_toBottomOf="@id/fundAvailableValue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/selectReloadAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/fontfabric_mont_bold"
+        android:text="@string/select_reload_amount"
+        android:textAllCaps="true"
+        android:textColor="@color/white_60"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fundsAvailableHolder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reloadSelector1"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/reload_amount_selector"
+        android:fontFamily="@font/fontfabric_mont_bold"
+        android:gravity="center"
+        tools:text="$10"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@+id/reloadSelector2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectReloadAmountLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reloadSelector2"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/reload_amount_selector"
+        android:fontFamily="@font/fontfabric_mont_bold"
+        android:gravity="center"
+        tools:text="$25"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/reloadSelector3"
+        app:layout_constraintStart_toEndOf="@+id/reloadSelector1"
+        app:layout_constraintTop_toBottomOf="@id/selectReloadAmountLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reloadSelector3"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/reload_amount_selector"
+        android:fontFamily="@font/fontfabric_mont_bold"
+        android:gravity="center"
+        tools:text="$50"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reloadSelector2"
+        app:layout_constraintTop_toBottomOf="@id/selectReloadAmountLabel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/payNowButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/pay_button_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/payNowLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontfabric_mont_bold"
+            android:text="@string/pay_now"
+            android:textColor="@color/background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/spinner"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_rawRes="@raw/smallspinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

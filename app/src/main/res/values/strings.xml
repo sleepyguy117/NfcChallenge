@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nfc Challenge</string>
+    <string name="dollars_format">$%d</string>
+    <string name="funds_available">Funds Available</string>
+    <string name="select_reload_amount">Select Reload Amount</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="balance_format">$%.2f</string>
+    <string name="successfully_added_format">$%d Successfully Added!</string>
+    <string name="tap_nfc_tag">Tap NFC Tag to Load</string>
+    <string name="nfc_tag_load_error">NFC Tag Load had an error</string>
+</resources>
