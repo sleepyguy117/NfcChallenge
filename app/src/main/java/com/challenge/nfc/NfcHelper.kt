@@ -26,7 +26,7 @@ class NfcHelper {
     private fun createNdefMessage(tokenRecord: TokenRecord): NdefMessage {
         /*
             3 ndefRecords
-            1 - "com.challenge.xeal"
+            1 - "com.challenge.nfc"
             2 - <users name>
             3 - balance as string
          */

@@ -19,7 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.XealChallenge.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.NfcChallenge.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.XealChallenge.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.NfcChallenge.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.challenge.xeal", appContext.packageName)
+        assertEquals("com.challenge.nfc", appContext.packageName)
     }
 }
